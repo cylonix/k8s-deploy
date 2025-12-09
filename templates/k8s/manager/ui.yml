@@ -10,7 +10,7 @@ spec:
     manage-daemon: ""
   containers:
   - name: ${NAMESPACE_REPLACE}-ui
-    image: cylonix/sase-ui:v2.0
+    image: cylonix/cylonix-manager-ui:v2.1
     env:
       - name: VITE_BASE_URL
         value: ${BASE_URL}/manager/v2
