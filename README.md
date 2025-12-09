@@ -24,6 +24,13 @@ following command:
 tar -xvf bundle.tar
 ```
 
+#### Upload container images
+
+- For Cylonix manager, please refer to the cylonix-manager repository and build the docker image and upload it to the master node for container image.
+Cylonix also publishes the image to the docker hub public image repository.
+
+- For Cylonix manager UI, please refer to the cylonix-manager-ui repository and build the docker image and upload it to the master node for container image. Cylonix also publishes the image to the docker hub public image repository.
+
 #### Single Node Deployment
 
 ```bash
