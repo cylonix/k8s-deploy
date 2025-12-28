@@ -10,7 +10,7 @@ spec:
     manage-daemon: ""
   containers:
   - name: ${NAMESPACE_REPLACE}-ui
-    image: cylonix/cylonix-manager-ui:v2.1
+    image: cylonix/cylonix-manager-ui:v2.1.1
     env:
       - name: VITE_BASE_URL
         value: ${BASE_URL}/manager/v2
@@ -18,6 +18,12 @@ spec:
         value: ${BASE_URL}/oauth-success
       - name: VITE_WS_URL
         value: ${BASE_URL}/ws/log/v1/alert
+      - name: VITE_COMPANY_NAME
+        value: ${COMPANY_NAME}
+      - name: VITE_COMPANY_WEBSITE
+        value: ${COMPANY_WEBSITE}
+      - name: VITE_COMPANY_CONTACT_EMAIL
+        value: ${COMPANY_CONTACT_EMAIL}
 ---
 apiVersion: v1
 kind: Service

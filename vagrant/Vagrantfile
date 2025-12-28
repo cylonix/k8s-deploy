@@ -14,7 +14,7 @@ begin
   servers = json_config["servers"]
 rescue
   print "====================================================================\n"
-  print " Faied to open ", CONFIG_FILE, "\n"
+  print " Failed to open ", CONFIG_FILE, "\n"
   print " Please generate the config file first:\n"
   print "    cd ..; make generate\n"
   print "====================================================================\n"

@@ -10,7 +10,7 @@ spec:
     manage-daemon: ""
   containers:
   - name: ${NAMESPACE_REPLACE}
-    image: cylonix/cylonix-manager:alpine-v1.0.5
+    image: cylonix/cylonix-manager:alpine-v1.0.6
     command: ["/opt/entrypoint.sh"]
     args: ["manager", "--log-level", "debug"]
     envFrom:

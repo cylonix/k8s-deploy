@@ -1,8 +1,14 @@
 #!/bin/sh
 
 # Entries without a default value is to be set in your .env.local file
+# Entries with a default value can be overwritten in your .env.local file.
 # in the format of VARIABLE_NAME=value, one variable per line.
 # e.g. TRAEFIK_ADMIN_EMAIL=cert-admin@example.com
+
+# General deployment settings.
+export COMPANY_WEBSITE=${COMPANY_WEBSITE}
+export COMPANY_NAME=${COMPANY_NAME}
+export COMPANY_CONTACT_EMAIL=${COMPANY_CONTACT_EMAIL}
 
 # Deployment name means the branding of the deployment, e.g. cylonix.
 export DEPLOYMENT=${DEPLOYMENT:-cylonix}
